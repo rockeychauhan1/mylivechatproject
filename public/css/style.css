@@ -2,8 +2,8 @@
 
 :root {
 	--dark-color-a: #0b28eb;
-	--dark-color-b:#3c640aa6 ;
-	--light-color: rgb(16 249 109 / 54%);
+	--dark-color-b:#111113a6 ;
+	--light-color: rgba(176, 144, 235, 0.54);
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -37,7 +37,7 @@ a {
 	cursor: pointer;
 	padding: 5px 15px;
 	background: var(--light-color);
-	color: var(--dark-color-a);
+	color: red;
 	border: 0;
 	font-size: 17px;
 }
