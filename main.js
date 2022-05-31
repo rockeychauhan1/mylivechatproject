@@ -7,6 +7,7 @@ const userList = document.getElementById('users');
 const { username, room } = Qs.parse(location.search, {
   ignoreQueryPrefix: true,
 });
+<script data-main="scripts/app" src="scripts/require.js"></script>
 const io = require("socket.io-client");
 const socket = io();
 
@@ -84,7 +85,7 @@ function outputUsers(users) {
 document.getElementById('leave-btn').addEventListener('click', () => {
   const leaveRoom = confirm('Are you sure you want to leave the chatroom?');
   if (leaveRoom) {
-    window.location = '../index.html';
+    window.location = 'index.html';
   } else {
   }
 });
