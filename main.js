@@ -2,13 +2,15 @@ const chatForm = document.getElementById('chat-form');
 const chatMessages = document.querySelector('.chat-messages');
 const roomName = document.getElementById('room-name');
 const userList = document.getElementById('users');
-
+const socketio = require('socket.io');
 // Get username and room from URL
 const { username, room } = Qs.parse(location.search, {
   ignoreQueryPrefix: true,
 });
-import {require} from scripts/require.js;
-const io = require("socket.io-client");
+
+const app = express();
+const server = http.createServer(app);
+const io = socketio(server);
 const socket = io();
 
 // Join chatroom
