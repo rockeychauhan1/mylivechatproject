@@ -7,7 +7,7 @@ const userList = document.getElementById('users');
 const { username, room } = Qs.parse(location.search, {
   ignoreQueryPrefix: true,
 });
-<script data-main="scripts/app" src="scripts/require.js"></script>
+import {require} from scripts/require.js;
 const io = require("socket.io-client");
 const socket = io();
 
